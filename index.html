@@ -1,122 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Paradise | Official Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Paradise | DJ & Producer</title>
+
+    <!-- Brand font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Css/styles.css" />
+    <script src="js/fotos_script.js" defer></script>
 </head>
-<body>
 
-    <nav class="navbar">
-        <div class="logo">DIGITAL PARADISE</div>
-        <ul class="nav-links">
-            <li><a href="#music">Music</a></li>
-            <li><a href="#tour">Tour</a></li>
-            <li><a href="#epk">EPK</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="social-icons">
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-            <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
-            <a href="#" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
-        </div>
-    </nav>
+<body id="top">
+    <header class="site-header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="#top" class="logo-link" aria-label="Go to top">
+                    <img src="imgs/DP-Logo.png" alt="Digital Paradise" />
+                </a>
+            </div>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="main-title">DIGITAL PARADISE</h1> 
-            <p class="subtitle">Tropical • Ritualistic • Electronic</p>
-            <a href="#music" class="cta-button">Listen Now</a>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#projects">Media</a></li>
+                <li><a href="#spotify">Spotify</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="music" class="content-section">
-        <h2 class="section-title">LATEST RELEASES</h2>
-        <div class="music-grid">
-            
-            <div class="music-item">
-                <div class="placeholder-box">
-                    <span>[ALBUM ART]</span>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-inner">
+                <p class="kicker">DJ / Producer</p>
+                <h1 class="hero-title">High-energy sets. Clean visuals. Night-ready sound.</h1>
+                <p class="hero-sub">
+                    Digital Paradise blends club-focused production with bold, minimal aesthetics.
+                    Available for shows, collabs and releases.
+                </p>
+
+                <div class="hero-cta">
+                    <a class="btn btn-primary" href="#projects">Explore media</a>
+                    <a class="btn btn-ghost" href="#spotify">Listen</a>
                 </div>
-                <h3 class="track-title">Jungle Algorithm</h3>
-                <a href="#" class="stream-link"><i class="fab fa-spotify"></i> Stream</a>
             </div>
+        </section>
 
-            <div class="music-item">
-                <div class="placeholder-box">
-                    <span>[ALBUM ART]</span>
+        <!-- BIO -->
+        <section id="bio" class="bio-section">
+            <div class="bio-card">
+                <div class="bio-text">
+                    <h2>Bio</h2>
+                    <p>
+                        Digital Paradise is a DJ & music producer focused on club-ready tracks,
+                        tight grooves and cinematic textures. From late-night rooms to festival stages,
+                        the sound stays energetic, modern and clean.
+                    </p>
+                    <!-- <p class="muted">Genre • City • Booking/Management</p> -->
+
+                    <div class="bio-meta">
+                        <div class="pill">DJ</div>
+                        <div class="pill">Producer</div>
+                        <!-- <div class="pill">Club / Live</div> -->
+                    </div>
+
+                    <div class="bio-actions">
+                        <a class="btn btn-primary" href="#contact">Book now</a>
+                        <a class="btn btn-ghost" href="#spotify">Latest release</a>
+                    </div>
                 </div>
-                <h3 class="track-title">Ancient Wi-Fi</h3>
-                <a href="#" class="stream-link"><i class="fab fa-spotify"></i> Stream</a>
-            </div>
 
-            <div class="music-item">
-                <div class="placeholder-box">
-                    <span>[ALBUM ART]</span>
+                <!-- Only a visual stage/placeholder (photos will float here via transforms) -->
+                <!-- <div class="collage-stage" aria-label="Floating collage stage">
+                    <div class="collage-hint">
+                        <span class="muted">Scroll down</span>
+                        <span class="arrow">↓</span>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- MEDIA (photos LAND HERE as a clean 2x2 grid) -->
+        <section id="projects" class="projects-section">
+            <div class="section-head">
+                <div>
+                    <h2>Media</h2>
+                    <!-- <p class="muted">Collage → scroll → locked grid.</p> -->
                 </div>
-                <h3 class="track-title">Tropicana (Remix)</h3>
-                <a href="#" class="stream-link"><i class="fab fa-spotify"></i> Stream</a>
+                <div class="head-badges">
+                    <span class="badge">Press</span>
+                    <span class="badge">Artwork</span>
+                    <span class="badge">Live</span>
+                </div>
             </div>
 
-        </div>
-    </section>
+            <div id="projectgrid" aria-label="Media grid">
+                <div><img src="imgs/4_n.png" alt="Media image 1"></div>
+                <div><img src="imgs/person.png" alt="Media image 2"></div>
+                <div><img src="imgs/408.png" alt="Media image 3"></div>
+                <div><img src="imgs/052408.png" alt="Media image 4"></div>
+            </div>
+        </section>
 
-    <section id="tour" class="content-section gradient-bg">
-        <h2 class="section-title">UPCOMING RITUALS</h2>
-        <div class="tour-table">
-            
-            <div class="tour-row">
-                <span class="date">-- DEC</span>
-                <span class="venue">Club Mystique</span>
-                <span class="city">AMSTERDAM, NL</span>
-                <a href="#" class="ticket-btn">Tickets</a>
+        <!-- SPOTIFY under the photos -->
+        <section id="spotify" class="spotify_section">
+            <div class="spotify-wrap">
+                <div class="spotify-head">
+                    <h3>Listen on Spotify</h3>
+                    <p class="muted">Embed your playlist / latest release below.</p>
+                </div>
+
+                <!-- Replace PLAYLIST_ID with your real Spotify playlist ID -->
+                <!-- 
+        https://open.spotify.com/album/641rp74G1OQkbITkHPHy7M?si=4UkO8VPkSEG0GPk0KapmMA
+        -->
+                <iframe class="spotify-embed"
+                    src="https://open.spotify.com/embed/album/641rp74G1OQkbITkHPHy7M?si=4UkO8VPkSEG0GPk0KapmMA"
+                    width="100%" height="352" frameborder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+                    title="Spotify album">
+                </iframe>
+
             </div>
 
-            <div class="tour-row">
-                <span class="date">-- DEC</span>
-                <span class="venue">The Warehouse</span>
-                <span class="city">BERLIN, DE</span>
-                <span class="sold-out">SOLD OUT</span>
+            <!-- SOUNDCLOUD -->
+            <div class="soundcloud-wrap">
+                <div class="soundcloud-head">
+                    <h3>Listen on SoundCloud</h3>
+                    <p class="muted">Originals & live sets</p>
+                </div>
+
+                <iframe class="soundcloud-embed"
+                    src="https://w.soundcloud.com/player/?url=https://soundcloud.com/thedigitalparadise?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                    frameborder="0" allow="autoplay" loading="lazy" title="SoundCloud player">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- MUSIC LINKS -->
+        <section id="music" class="music-section">
+            <div class="section-head">
+                <div>
+                    <h2>My music</h2>
+                    <p class="muted">Quick links to platforms.</p>
+                </div>
             </div>
 
-            <div class="tour-row">
-                <span class="date">-- JAN</span>
-                <span class="venue">Electric Beach</span>
-                <span class="city">BARCELONA, ES</span>
-                <a href="#" class="ticket-btn">Tickets</a>
+            <div class="music-buttons">
+                <a class="music-btn"
+                    href="https://open.spotify.com/artist/38XsZZklTRGPT3n1plEdB6?si=YGF6vyxdT7OUgjFDXIoPnQ"
+                    target="_blank" rel="noopener">Spotify</a>
+                <a class="music-btn" href="https://soundcloud.com/thedigitalparadise" target="_blank"
+                    rel="noopener">SoundCloud</a>
+                <a class="music-btn" href="https://www.youtube.com/@Digital-Paradise-297" target="_blank"
+                    rel="noopener">YouTube</a>
+            </div>
+            <div class="youtube-wrap">
+                <div class="youtube-head">
+                    <h3>Latest video</h3>
+                    <p class="muted">Live set / official visual</p>
+                </div>
+
+                <div class="youtube-embed">
+                    <iframe src="https://www.youtube.com/embed/aJ9pzlymBgw"
+                    title="YouTube video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
             </div>
 
-            <div class="tour-row">
-                <span class="date">-- JAN</span>
-                <span class="venue">Jungle Stage</span>
-                <span class="city">TULUM, MX</span>
-                <a href="#" class="ticket-btn">Tickets</a>
+            <!-- <div class="embed-card">
+                <p class="muted">
+                    Tip: voeg hier eventueel een tweede embed toe (YouTube live set of nieuwste track).
+                </p>
+            </div> -->
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+            <div class="contact-card">
+                <h2>Contact</h2>
+                <p class="muted">Booking, press, collabs — hit me up.</p>
+
+                <div class="contact-grid">
+                    <a class="link"
+                        href="https://www.instagram.com/digital_paradise297?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" rel="noopener">Instagram</a>
+                    <!-- <a class="link" href="#" target="_blank" rel="noopener">TikTok</a> -->
+                    <a class="link" href="mailto:youremail@example.com">Email</a>
+                    <!-- <a class="link" href="#" target="_blank" rel="noopener">Press Kit</a> -->
+                </div>
+
+                <div class="fineprint muted">
+                    Management/Booking: email@example.com • Based in: Tilburg
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <footer class="footer">
+            <p class="muted">© <span id="year"></span> Digital Paradise</p>
+        </footer>
+    </main>
 
-    <footer id="contact">
-        <h2>CONTACT & BOOKINGS</h2>
-        <p class="email-display">booking@digitalparadise.com</p>
-        
-        <div class="epk-download">
-            <a href="#" class="cta-button secondary"><i class="fas fa-download"></i> Download EPK / Rider</a>
-        </div>
-
-        <div class="footer-socials">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
-            <a href="#"><i class="fab fa-spotify"></i></a>
-            <a href="#"><i class="fab fa-soundcloud"></i></a>
-            <a href="#"><i class="fab fa-apple"></i></a>
-        </div>
-
-        <p class="copyright">© 2025 Digital Paradise. All Rights Reserved.</p>
-    </footer>
-
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
